@@ -1,0 +1,18 @@
+
+/home/bcmiadmin/torch/install/bin/luajit: /home/bcmiadmin/torch/install/share/lua/5.1/trepl/init.lua:389: /home/bcmiadmin/torch/install/share/lua/5.1/trepl/init.lua:389: /home/bcmiadmin/torch/install/share/lua/5.1/cudnn/ffi.lua:1603: 'libcudnn (R5) not found in library path.
+Please install CuDNN from https://developer.nvidia.com/cuDNN
+Then make sure files named as libcudnn.so.5 or libcudnn.5.dylib are placed in
+your library load path (for example /usr/local/lib , or manually add a path to LD_LIBRARY_PATH)
+
+Alternatively, set the path to libcudnn.so.5 or libcudnn.5.dylib
+to the environment variable CUDNN_PATH and rerun torch.
+For example: export CUDNN_PATH="/usr/local/cuda/lib64/libcudnn.so.5"
+
+stack traceback:
+	[C]: in function 'error'
+	/home/bcmiadmin/torch/install/share/lua/5.1/trepl/init.lua:389: in function 'require'
+	../utils/utils.lua:523: in function 'require_cutorch'
+	cnn_evaluator.lua:16: in main chunk
+	[C]: in function 'dofile'
+	...dmin/torch/install/lib/luarocks/rocks/trepl/scm-1/bin/th:150: in main chunk
+	[C]: at 0x00406670

@@ -632,6 +632,7 @@ function cnnplayer:genmove(player)
     -- Call move predictor to get the move.
     io.stderr:write("Start genmove. signature: " .. utils.get_signature())
     local xf, yf, win_rate = self.cbs.move_predictor(self.b, player)
+    -- io.stderr:write("Just a test!")
     if win_rate and win_rate < self.opt.win_rate_thres then
         io.stderr:write(string.format("No hope, win_rate %f", win_rate))
         return true, "resign"

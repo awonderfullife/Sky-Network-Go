@@ -28,7 +28,7 @@ local opt = pl.lapp[[
     -v,--verbose      (default 1)            The verbose level (1 = critical, 2 = info, 3 = debug)
     --print_tree                             Whether print the search tree.
     --max_send_attempts (default 3)          #attempts to send to the server.
-    --pipe_path         (default "/data/local/go/") Pipe path
+    --pipe_path         (default "../data/local/go") Pipe path
     --tier_name         (default "ai.go-evaluator") Tier name
     --server_type       (default "local")    We can choose "local" or "cluster". For open source version, for now "cluster" is not usable.
     --tree_to_json                           Whether we save the tree to json file for visualization. Note that pipe_path will be used.
@@ -79,7 +79,7 @@ local function load_params_for_formal_game()
     opt.verbose = 1 --      (default 1)            The verbose level (1 = critical, 2 = info, 3 = debug)
     opt.print_tree = true --                             Whether print the search tree.
     opt.max_send_attempts = 3 -- (default 3)          #attempts to send to the server.
-    opt.pipe_path = "/data/local/go/" --         (default "/data/local/go/") Pipe path
+    opt.pipe_path = "../data/local/go" --         (default "../data/local/go") Pipe path
     opt.tier_name = "ai.go-evaluator" --         (default "ai.go-evaluator") Tier name
     opt.server_type = "local" --       (default "local")                 We can choose "local" or "cluster"
     opt.tree_to_json = false --                           Whether we save the tree to json file for visualization. Note that pipe_path will be used.

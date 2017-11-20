@@ -1,0 +1,16 @@
+
+Found Environment variable CUDNN_PATH = /usr/local/cuda/lib64/libcudnn.so.5GPU used: 1	
+Loading model = /home/yiyuqi/2017_Semester/Sky-Network-Go/darkforestGo/models/df2.bin	
+Loading complete	
+CNN Exchanger initialized.	
+Size of MBoard: 4088	
+Size of MMove: 720	
+----Go board for LUA version 1.0----	
+sizeof(Board) = 4060	
+sizeof(Group) = 8	
+sizeof(Info) = 6	
+sizeof(GroupId4) = 26	
+sizeof(Board._infos) = 2646	
+sizeof(Board._groups) = 1384	
+-----------------------------------	
+ready	
